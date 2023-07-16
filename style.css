@@ -862,7 +862,7 @@ footer .ref {
 }
 
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
     .cards {
         position: relative;
         display: flex;
