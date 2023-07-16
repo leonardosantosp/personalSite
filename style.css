@@ -1,0 +1,918 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header{
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 0px 5px 0 gray;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header h2{
+    font-family: crossorogin, sans-serif;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+header h2 span{
+    color: #34D387;
+}
+
+section{
+    height: 643px;
+}
+
+/* MENU */
+.menu{
+    list-style: none;
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 15px;
+    right: 30px;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a{  
+    position: relative;
+    font-family: Belanosima, sans-serif;
+}
+
+.menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #34D387;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li a:hover{
+    color: #A3E7B0;
+}
+
+.menu li a:hover:after{
+    width: 100%;
+}
+
+/* HOME */
+#home{
+    background: whitesmoke;
+}
+
+#home h1{
+    font-size: 40px;
+    position: relative;
+    top: 256px;
+    width: 500px;
+    left: 250px;
+    font-family: roboto, sans-serif;
+}
+
+#home h2{
+    font-size: 35px;
+    position: relative;
+    top: 286px;
+    width: 500px;
+    left: 250px;
+    font-family: roboto, sans-serif;
+}
+
+#home h2 mark{
+    color: white;
+    background-color: #34D387;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Fasthand, sans-serif;
+}
+
+.home-image{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    float: right;
+    margin-right: 250px;
+    bottom: 55px;
+    transition: 0.3s;
+}
+
+#home:hover .home-image{
+    transform: translateY(-12px);
+}
+
+/* DIVISORES DE TELA */
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+     #21b86f,
+     #c0ffcc
+    );
+  }
+  
+  .divider-2 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      #c0ffcc,
+      #21b86f
+    );
+  }
+
+/* SOBRE */
+.sobre-image{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 30px;
+    float: left;
+    margin-left: 45px;
+    bottom: 55px;
+    transition: 0.3s;
+}
+
+#sobre:hover .sobre-image{
+    transform: translateY(-12px);
+}
+
+.text-sobre {
+    position: relative;
+    float: right;
+    top: 200px;
+    right: 150px;
+    font-family: roboto, sans-serif;
+}
+
+.text-sobre h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* PASSATEMPOS */
+#informacoes {
+    background: whitesmoke;
+    font-family: roboto, sans-serif;
+}
+
+#informacoes h2{
+    position: relative;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    top: 30px;
+}
+
+/* cards */
+.cards{
+    position: relative;
+    display: flex;
+    left: 190px;
+    top: 90px;
+}
+
+.cards img {
+    position: relative;
+    top: 40px;
+    left: 95px;
+    width: 100px;
+    height: 100px;
+    filter: hue-rotate(327deg) sepia(10%);
+}
+
+.cards a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards .gif{
+    opacity: 0;
+    position: absolute;
+    filter: hue-rotate(327deg) sepia(10%);
+}
+
+/* card1 */
+.card1{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px gray;
+    transition: 0.2s;
+}
+
+.card1:hover{
+    transform: translateY(-15px);
+}
+
+.card1:hover .img{
+   opacity: 0;
+}
+
+.card1:hover .gif{
+    opacity: 1;
+    width: 130px;
+    height: 130px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.card1:hover a{
+    color: #A3E7B0;
+}
+
+/* card2 */
+
+.card2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px gray;
+    transition: 0.2s;
+}
+
+.card2:hover{
+    transform: translateY(-15px);
+}
+
+.card2:hover .img{
+    opacity: 0;
+ }
+
+ .card2:hover .gif{
+    opacity: 1;
+    width: 130px;
+    height: 130px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.card2:hover a{
+    color: #A3E7B0;
+}
+/* card3 */
+
+.card3{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px gray;
+    transition: 0.2s;
+}
+
+.card3:hover{
+    transform: translateY(-15px);
+}
+ 
+.card3:hover .img{
+    opacity: 0;
+}
+
+.card3:hover .gif{
+    opacity: 1;
+    width: 130px;
+    height: 130px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.card3:hover a{
+    color: #A3E7B0;
+}
+
+
+/* CONTATO */
+
+#contato h2 {
+    font-size: 40px;
+    font-family: roboto, sans-serif;
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    left: 230px;
+    top: 130px;
+}
+
+#contato:hover .contato-image{
+    transform: translateY(-15px);
+}
+
+.contato-image {
+    height: 500px;
+    width: 500px;
+    transition: 0.3s;
+    position: relative;
+    float: right;
+    right: 30px;
+    bottom: 90px;
+}
+
+.icons {
+    position: relative;
+    top: 190px;
+    left: 200px;
+    display: flex;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons img{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.github .img{
+    position: relative;
+}  
+    
+.github .gif{
+    opacity: 0;
+    position: relative;
+    right: 74px;
+}
+
+.github:hover .img{
+    opacity: 0;
+}
+
+.github:hover .gif{
+    opacity: 1;
+}
+
+.gmail .img{
+    position: relative;
+}
+
+.gmail .gif{
+    opacity: 0;
+    position: relative;
+    right: 74px;
+}
+
+.gmail:hover .img{
+    opacity: 0;
+}
+
+.gmail:hover .gif{
+    opacity: 1;
+}
+
+.linkedin .img{
+    position: relative;
+}
+
+.linkedin .gif{
+    opacity: 0;
+    position: relative;
+    right: 74px;
+}
+
+.linkedin:hover .img{
+    opacity: 0;
+}
+
+.linkedin:hover .gif{
+    opacity: 1;
+}
+
+/* FOOTER */
+footer{
+    background-color: #34D387;
+    height: 250px;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: crossorogin, sans-serif;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+footer span{
+    color: white;
+    font-family: crossorogin, sans-serif;
+}
+
+footer p{
+    position: relative;
+    top: 180px;
+    left: -300px;
+    color: white;
+    float: left;
+}
+footer .menu{
+    position: relative;
+    float: left ;
+    top: 70px;
+    left: 2px;
+}
+
+footer .ref {
+    position: relative;
+    float: right;
+    right: 110px;
+    top: 90px;
+}
+
+.ref p {
+    position: relative;
+    float: right;
+    left: 45px;
+    top: 33px;
+    font-size: 20px;
+    font-family: roboto, sans-serif;
+}
+
+.ref a {
+    position: relative;
+    top: 20px;
+    left: 250px;
+    padding-right: 13px;
+}
+
+.ref a:hover{
+    color:#A3E7B0;
+}
+
+/*PAGE PASSATEMPO*/
+.back-to-index{
+    position: relative;
+    top: 60px;
+    position: fixed;
+}
+
+/*Esportes*/
+#esportes{
+    background-color: whitesmoke;
+}
+
+#esportes:hover img{
+    transform: translateY(-15px);
+}
+
+#esportes img{
+    width: 500px;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+#esportes p{
+    position: relative;
+    float: right;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    bottom: 390px;
+    right: 70px;
+}
+
+#esportes h1 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*jogos*/
+#jogos img {
+    width: 600px;
+    height: 600px;
+    margin-top: 90px;
+    transition: 0.3s;
+    position: relative;
+    float: right;
+    left: 400px;
+}
+
+#jogos:hover img {
+    transform: translateY(-15px);
+}
+
+#jogos p {
+    justify-content: space-around; 
+    position: relative;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    left: 250px;
+    top: 150px;
+    margin-top: 60px;
+}
+
+#jogos h1 {
+    font-size: 40px;
+    margin: 0 auto;
+    float: right;
+   position: relative;
+   left: 600px;
+}
+
+#jogos ul {
+    position: relative;
+    left: 410px;
+    top: 200px;
+}
+
+/*Músicas*/
+
+#musicas{
+    background-color: whitesmoke;
+}
+
+#musicas:hover img{
+    transform: translateY(-15px);
+}
+
+#musicas img{
+    width: 500px;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+#musicas h1 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#musicas ol{
+    margin-top: 50px;
+    
+}
+
+#musicas .text {
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 90px 0 0;
+
+}
+
+#musicas p{
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+}
+
+/*filmes e series*/
+#filmes-series img{
+    width: 500px;
+    height: 500px;
+    transition: 0.3s;
+    float: right;
+}
+
+#filmes-series:hover img{
+    transform: translateY(-15px);
+}
+
+#filmes-series p{
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    margin: 200px 0 0 130px;
+}
+
+#filmes-series h1 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*SECTION ESTUDOS*/
+/*back-end*/
+#back-end {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#back-end:hover img{
+    transform: translateY(-15px);
+}
+
+#back-end h1{
+    position: relative;
+    top: 100px;
+    font-size: 40px;
+    margin-left: auto;
+    left: 210px;
+}
+
+#back-end img{
+    width: 500px;
+    height: 500px;
+    transition: 0.3s;
+}
+
+#back-end p {
+   position: relative;
+   top: 300px;
+   right: 100px;
+   font-size: 20px;
+   font-family: roboto, sans-serif;
+}
+
+/*IA*/
+#ia:hover img{
+    transform: translateY(-15px);
+}
+
+#ia img{
+    width: 500px;
+    height: 500px;
+    transition: 0.3s;
+    float: right;
+}
+
+#ia h1{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#ia p {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 180px;
+    font-size: 20px;
+   font-family: roboto, sans-serif;
+}
+
+/*front-end*/
+
+#front-end{
+    background-color: whitesmoke;
+}
+
+#front-end:hover img{
+    transform: translateY(-15px);
+}
+
+#front-end h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#front-end img{
+    height: 500px;
+    width: 500px;
+    transition: 0.3s;
+}
+
+#front-end p{
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+    float: right;
+    position: relative;
+    top: 210px;
+    right: 40px;
+}
+
+/*Games*/
+#games:hover img{
+    transform: translateY(-15px);
+}
+
+#games img{
+
+    height: 500px;
+    width: 500px;
+    float: right;
+    transition: 0.3s;
+}
+
+#games h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#games p{
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 190px;
+    left: 40px;
+}
+
+/*Formação*/
+#formacao {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formacao:hover img{
+    transform: translateY(-15px);
+}
+
+#formacao img{
+    width: 500px;
+    height: 500px;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+#formacao h1{
+    font-size: 40px;
+    position: relative;
+    left: 250px;
+}
+
+#formacao p{
+    margin-bottom: 65px;
+    font-size: 20px;
+    font-family: roboto, sans-serif;
+}
+
+@media screen and (max-width: 1366px) {
+
+    #home ,h1 h2 {
+       left: 0;
+    }  
+
+    .home-image{
+        position: relative;
+        left: 150px;
+    }
+
+    #contato{
+        height: 643px;
+    }
+
+    #informacoes .cards div{
+        position: relative;
+        right: 235px;
+    }
+
+    #contato .contato-image {
+        height: 500px;
+        width: 500px;
+        transition: 0.3s;
+        position: relative;
+        float: right;
+        right: 30px;
+        bottom: 120px;
+    }
+
+    main #contato h2 {
+        position: relative;
+        left: 240px;
+        top: 150px;
+    }
+
+    #contato .icons{
+        position: relative;
+        left: 205px;
+        top: 180px;
+    }
+
+    #esportes p{
+        position: relative;
+        float: right;
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        bottom: 390px;
+        left: -100px;
+    }
+
+    #jogos p {
+        position: relative;
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        left: 210px;
+        top: 150px;
+        margin-top: 60px;
+        white-space: nowrap;
+    }
+    
+
+    #jogos img{
+        width: 600px;
+        height: 600px;
+        margin-top: 90px;
+        transition: 0.3s;
+        position: relative;
+        float: right;
+        left: 600px;
+    }
+
+    #musicas img{
+        width: 500px;
+        height: 500px;
+        margin-top: 17px;
+        margin-left: 30px;
+        transition: 0.3s;
+    }
+}
+
+
+@media screen and (min-width: 1366px) {
+    .cards {
+        position: relative;
+        display: flex;
+        left: 399px;
+        top: 90px;
+    }
+
+    .icons {
+        position: relative;
+        top: 260px;
+        left: 350px;
+        display: flex;
+    }
+
+    #contato h2 {
+        font-size: 40px;
+        font-family: roboto, sans-serif;
+        display: flex;
+        margin-top: 30px;
+        position: relative;
+        left: 380px;
+        top: 217px;
+    }
+
+    .contato-image {
+        height: 500px;
+        width: 500px;
+        transition: 0.3s;
+        position: relative;
+        float: right;
+        right: 200px;
+        bottom: 90px;
+    }
+
+    #esportes h1{
+        position: relative;
+    font-size: 40px;
+    bottom: 450px;
+    display: flex;
+    justify-content: space-around;
+    left: 167px;
+    }
+
+    #esportes p {
+        position: relative;
+        float: right;
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        bottom: 390px;
+        right: 431px;
+    }
+
+}
